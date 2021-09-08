@@ -449,7 +449,6 @@ header nav {
 }
 
 .special .div1 {
-  background-color: orange;
   border-radius: 19px;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -482,6 +481,10 @@ header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.special .div1 #img1 {
+  background-color: black;
 }
 
 .slider {
