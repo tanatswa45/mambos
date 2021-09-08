@@ -405,7 +405,6 @@ header{
     
 
     .div1{
-        // background-color: orange;
         border-radius: 19px;
         display: flex !important;
         justify-content: space-between;
@@ -432,6 +431,9 @@ header{
     #img1{
         background-color: black;
     }
+    #img3{
+        background-color:red ;
+    }
    
 
         
@@ -443,7 +445,6 @@ header{
         margin: 100px auto;
     }
 
-   
 
     .slick-slide img {
       width: 100%;
@@ -792,6 +793,19 @@ footer{
         width: 50%;
     }
 }
+.special {
+    .secondslick{
+        .div2{
+            background-color: red;
+        }
+        .div3{
+            background-color: black;
+        }
+        .div4{
+            background-color: orange;
+        }
+    }
+}
 .gallery{
     background: url("../img/wheat.png");
     background-size: cover;
@@ -878,6 +892,14 @@ footer{
         font-size: 34px;
         top: 183px;
         padding-left: 109px;
+    }
+}
+footer{
+    .div2{
+        display: flex;
+        .div1{
+            width: 50%;
+        }
     }
 }
 

@@ -487,6 +487,10 @@ header nav {
   background-color: black;
 }
 
+.special .div1 #img3 {
+  background-color: red;
+}
+
 .slider {
   width: 60%;
   margin: 100px auto;
@@ -827,6 +831,15 @@ footer .div2 .div11 a {
     display: block;
     width: 50%;
   }
+  .special .secondslick .div2 {
+    background-color: red;
+  }
+  .special .secondslick .div3 {
+    background-color: black;
+  }
+  .special .secondslick .div4 {
+    background-color: orange;
+  }
   .gallery {
     background: url("../img/wheat.png");
     background-size: cover;
@@ -907,6 +920,14 @@ footer .div2 .div11 a {
     font-size: 34px;
     top: 183px;
     padding-left: 109px;
+  }
+  footer .div2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer .div2 .div1 {
+    width: 50%;
   }
 }
 

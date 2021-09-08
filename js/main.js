@@ -48,8 +48,8 @@ $(".secondslick").slick({
   slidesToScroll: 1,
   // autoplay:true,
   arrow:true,
-  prevArrow:'#img1',
-  nextArrow: '#img2',
+  prevArrow:'#img11',
+  nextArrow: '#img22',
 
   
   responsive:[        
@@ -76,7 +76,7 @@ $(".thirdslick").slick({
   infinite: true,
   slidesToShow: 6,
   slidesToScroll: 1,
-  // autoplay:true,
+  autoplay:true,
   arrow:true,
   prevArrow:'#img1',
   nextArrow: '#img2',
