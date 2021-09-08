@@ -218,7 +218,7 @@ header nav {
 
 .hero .arrows {
   position: absolute;
-  margin-top: -94vh;
+  margin-top: -96vh;
   margin-left: 20vh;
 }
 
@@ -253,7 +253,7 @@ header nav {
 
 .hero .slick .text h1 {
   font-family: "Montserrat3";
-  font-size: 26px;
+  font-size: 20px;
   margin: 7px 0px;
 }
 
@@ -326,11 +326,16 @@ header nav {
   padding: 25px 15px;
 }
 
-.about .div1 .main .box:hover p {
+.about .div1 .main .box:hover {
+  background-color: #d1d1d4;
+}
+
+.about .div1 .main .box p {
   font-family: "Montserrat2";
   font-size: 18px;
   line-height: 1.4;
   margin: 10px 0px;
+  color: black;
 }
 
 .about .div1 .main .box h3 {
@@ -361,16 +366,25 @@ header nav {
   margin: 5px 0px;
   padding: .5rem 1rem;
   text-align: center;
+  color: #cecece;
+}
+
+.our-menu .tab button:focus {
+  color: black;
 }
 
 .our-menu .tab button img {
   display: none;
   margin: 10px auto;
-  width: 50%;
+  width: 63%;
+}
+
+.our-menu .tab button .shwarma img {
+  width: 33%;
 }
 
 .our-menu .tab button:focus {
-  background-color: red;
+  background-color: transparent;
 }
 
 .our-menu .tabcontent ul {
@@ -924,6 +938,10 @@ footer .div2 .div11 a {
     margin-left: 77vh;
     width: 52%;
   }
+  .hero .arrows {
+    position: relative;
+    width: 12%;
+  }
   .hero .slick .img img {
     left: 91vh;
     width: 37%;
@@ -1095,6 +1113,8 @@ footer .div2 .div11 a {
     display: -ms-flexbox;
     display: flex;
     width: 11%;
+    position: relative;
+    top: -4vh;
   }
   footer .div1 {
     width: 30%;
@@ -1107,6 +1127,7 @@ footer .div2 .div11 a {
   }
   footer .div2 .div1 {
     width: 50%;
+    text-align: left;
   }
   footer .div2 .div11 {
     width: 50%;

@@ -18,8 +18,8 @@ $(".firstslick").slick({
   autoplay:true,
   fade:true,
   arrow:true,
-  nextArrow:"",
-  prevArrow:"",
+  nextArrow:"#arrow1",
+  prevArrow:"#arrow2",
  
   responsive:[        
     {
