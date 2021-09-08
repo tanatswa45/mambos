@@ -1,0 +1,1115 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  z-index: 4;
+  position: absolute;
+  width: 100%;
+  height: 12vh;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+header img {
+  width: 40%;
+}
+
+header .box-one {
+  display: none;
+}
+
+header .box-one ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0px;
+}
+
+header .box-one ul li {
+  padding: .5rem 1rem;
+}
+
+header .box-one ul li a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+header .box-one .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 10px;
+  width: 100%;
+  padding: 10px 0px;
+  background-color: colorType(bg_color_two);
+}
+
+header .box-one .icons img {
+  margin: 0px 20px;
+  width: 8%;
+}
+
+header #menubar {
+  width: 20%;
+  height: 45px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+header #menubar span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 80%;
+  background: #000000;
+  border-radius: 10px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+header #menubar span:nth-child(1) {
+  top: 3px;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+
+header #menubar span:nth-child(2) {
+  top: 18px;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+
+header #menubar span:nth-child(3) {
+  top: 33px;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+
+header #menubar.barOpen span {
+  background-color: #000000;
+}
+
+header #menubar.barOpen span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 4px;
+  left: 8px;
+  width: 70%;
+}
+
+header #menubar.barOpen span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+header #menubar.barOpen span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 35px;
+  left: 8px;
+  width: 70%;
+}
+
+header.open {
+  height: 40vh;
+}
+
+header.open .box-one {
+  display: block;
+}
+
+header.open #menubar {
+  position: absolute;
+  right: 2%;
+  top: 12%;
+}
+
+header nav {
+  display: none;
+}
+
+.hero {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero .arrows {
+  position: absolute;
+  margin-top: -94vh;
+  margin-left: 20vh;
+}
+
+.hero .arrows .arrows {
+  width: 0;
+}
+
+.hero .slick {
+  margin: 120px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero .slick .img {
+  height: 40vh;
+}
+
+.hero .slick .img img {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hero .slick .text {
+  height: 40vh;
+  padding: 40px 0px 0px 30px;
+}
+
+.hero .slick .text h1 {
+  font-family: "Montserrat3";
+  font-size: 26px;
+  margin: 7px 0px;
+}
+
+.hero .slick .text h1 span {
+  font-weight: bold;
+  font-family: "Montserrat1";
+  margin: 0 5px;
+  color: black;
+  border-bottom: 2px solid yellow;
+}
+
+.hero .slick .text h1:nth-last-child(2) {
+  margin: 0px 0px 30px;
+}
+
+.hero .slick .text button {
+  background-color: red;
+  border: none;
+  color: white;
+  text-align: center;
+}
+
+.hero .slick .text button #corner1 {
+  margin-left: 0;
+}
+
+.hero .slick .text button #corner2 {
+  margin-left: 22vh;
+  margin-top: -3vh;
+}
+
+.hero #img {
+  position: absolute;
+  width: 96%;
+  top: 12vh;
+  left: 1vh;
+}
+
+.about {
+  margin-top: 20vh;
+}
+
+.about .div1 {
+  display: block;
+}
+
+.about .div1 .h2 {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.about .div1 .h2 img {
+  width: 100%;
+}
+
+.about .div1 .h2 h2 {
+  font-family: "Montserrat3";
+  font-size: 36px;
+}
+
+.about .div1 .main .box {
+  text-align: center;
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(170, 170, 170, 0.419);
+          box-shadow: 0px 0px 5px 5px rgba(170, 170, 170, 0.419);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 25px 15px;
+}
+
+.about .div1 .main .box:hover p {
+  font-family: "Montserrat2";
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 10px 0px;
+}
+
+.about .div1 .main .box h3 {
+  font-family: "Montserrat1";
+  font-size: 18px;
+}
+
+.about .div1 .main .div2 {
+  margin-top: 4vh;
+}
+
+.our-menu {
+  overflow: hidden;
+  margin: 40px 0px;
+  padding: 0px 25px;
+}
+
+.our-menu .tab {
+  margin: 20px 0px;
+}
+
+.our-menu .tab button {
+  outline: none;
+  border: none;
+  font-family: "Montserrat1";
+  text-transform: capitalize;
+  font-size: 16px;
+  margin: 5px 0px;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+
+.our-menu .tab button img {
+  display: none;
+  margin: 10px auto;
+  width: 50%;
+}
+
+.our-menu .tab button:focus {
+  background-color: red;
+}
+
+.our-menu .tabcontent ul {
+  margin: 10px 0px;
+}
+
+.our-menu .tabcontent ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our-menu .tabcontent ul li h3 {
+  width: 40%;
+  margin: 10px 0px;
+  font-family: "Montserrat1";
+  font-size: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.our-menu .tabcontent ul li hr {
+  width: 20%;
+  padding: 1px;
+  opacity: 1;
+  background-color: rgba(172, 172, 172, 0.371);
+}
+
+.our-menu .tabcontent ul li .span {
+  font-family: "Montserrat2";
+  font-size: 18px;
+}
+
+.our-menu .tabcontent .list {
+  display: none;
+}
+
+.our-menu .tabcontent .net {
+  display: block;
+}
+
+.special {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+}
+
+.special .arrow {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 94px;
+}
+
+.special .div1 {
+  background-color: orange;
+  border-radius: 19px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.special .div1 .text {
+  width: 40%;
+  margin: 1vh;
+}
+
+.special .div1 .img {
+  width: 60%;
+}
+
+.special .div1 h2 {
+  font-family: "Montserrat3";
+  font-size: 22px;
+  color: white;
+}
+
+.special .div1 a {
+  color: white;
+}
+
+.special .div1 #img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider {
+  width: 60%;
+  margin: 100px auto;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-slide {
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+  opacity: 1;
+}
+
+.slick-active {
+  opacity: 1;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+.slick-slider {
+  margin: 0px 20px;
+}
+
+.testimonals {
+  background: url("../img/Group 1398.png");
+  background-size: cover;
+  width: 100%;
+  height: 120vh;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 12vh;
+}
+
+.testimonals .tabbs {
+  margin-top: 3vh;
+  text-align: center;
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(170, 170, 170, 0.419);
+          box-shadow: 0px 0px 5px 5px rgba(170, 170, 170, 0.419);
+  background-color: white;
+  margin-top: 9vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 25px 15px;
+}
+
+.testimonals .tabbs p {
+  font-size: 11px;
+  margin-top: 2vh;
+}
+
+.testimonals .tabbs hr {
+  padding: 1px;
+  color: black;
+}
+
+.testimonals .tab {
+  margin: 20px 0px;
+}
+
+.testimonals .tab button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  font-family: "Montserrat1";
+  text-transform: capitalize;
+  font-size: 16px;
+  margin: 5px 0px;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+
+.testimonals .tab button img {
+  margin: 10px auto;
+}
+
+.testimonals .tab button:focus {
+  background-color: transparent;
+}
+
+.gallery {
+  margin-top: 5vh;
+  text-align: center;
+  margin: auto;
+}
+
+.gallery h2 {
+  margin: 8vh;
+}
+
+.gallery #img {
+  position: relative;
+  width: 100%;
+}
+
+.gallery #img1 {
+  margin-bottom: 30vh;
+  margin-top: 8vh;
+}
+
+.gallery #img2 {
+  margin-top: 8vh;
+}
+
+.gallery .div2 img {
+  width: 30%;
+  margin-top: 3vh;
+}
+
+.gallery .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gallery .main div {
+  margin: 2px;
+  width: 40%;
+}
+
+.gallery .main div:nth-child(3), .gallery .main div:nth-child(4) {
+  position: relative;
+  bottom: 31vh;
+}
+
+.gallery .main div img {
+  margin: 1vh;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.gallery .main #img2 {
+  margin-top: 22vh;
+}
+
+.acoustic {
+  overflow: hidden;
+  margin-left: 4vh;
+  margin-top: -27vh;
+}
+
+.acoustic h2 {
+  position: relative;
+}
+
+.acoustic .fouthslick {
+  margin-top: 4vh;
+}
+
+.acoustic .fouthslick .div1 h4 {
+  position: absolute;
+  color: white;
+  font-size: 16px;
+  top: 94px;
+  padding-left: 68px;
+}
+
+.acoustic .fouthslick .div1 img {
+  width: 70%;
+  margin-left: 9vh;
+}
+
+.acoustic .fouthslick .div1 #img {
+  width: 70%;
+  margin-left: 8vh;
+}
+
+.acoustic .imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  top: -13vh;
+}
+
+footer {
+  background-image: url("../img/Group 1395.png");
+  width: 100%;
+  background-size: cover;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+footer #img {
+  display: none;
+}
+
+footer .div2 {
+  display: block;
+}
+
+footer .div2 .div1 {
+  margin-top: 3vh;
+}
+
+footer .div2 .div1 img {
+  width: 53%;
+  margin-top: 4vh;
+}
+
+footer .div2 .div1 h4 {
+  color: white;
+}
+
+footer .div2 .div1 a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+footer .div2 .div11 {
+  margin-top: 3vh;
+}
+
+footer .div2 .div11 h4 {
+  color: white;
+}
+
+footer .div2 .div11 a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  header #menubar {
+    display: none;
+  }
+  header {
+    background-color: transparent;
+  }
+  header img {
+    width: 20%;
+  }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav ul li a {
+    color: black;
+    text-decoration: none;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 3vh;
+    font-size: 22px;
+  }
+  .hero #img {
+    position: absolute;
+    width: 59%;
+    top: 0vh;
+    left: 1vh;
+  }
+  .hero img {
+    position: absolute;
+    margin-left: 29vh;
+    width: 60%;
+  }
+  .hero .slick {
+    display: block;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .hero .slick .img img {
+    left: 31vh;
+    width: 53%;
+  }
+  .hero .slick .text {
+    margin-top: -35vh;
+  }
+  .hero .slick button span {
+    font-size: 30px;
+  }
+  .hero #img50 {
+    width: 33%;
+    margin-left: -5vh;
+    margin-top: -22vh;
+  }
+  .about {
+    margin-top: -48vh;
+  }
+  .about .div1 {
+    margin-top: 0;
+  }
+  .about .div1 .h2 h2 {
+    font-size: 77px;
+    margin-top: -10vh;
+  }
+  .about .div1 .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about .div1 .main .box p {
+    font-size: 27px;
+  }
+  .about .div1 .main .box h3 {
+    font-size: 25px;
+  }
+  .our-menu .tab button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-family: "Montserrat-Bold";
+    text-transform: capitalize;
+    font-size: 29px;
+    margin: 5px 0px;
+    padding: .5rem 1rem;
+    text-align: center;
+  }
+  .our-menu .tab button img {
+    display: block;
+    width: 50%;
+  }
+  .gallery {
+    background: url("../img/wheat.png");
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+  }
+  .gallery .main div:nth-child(3), .gallery .main div:nth-child(4) {
+    position: relative;
+    bottom: 29vh;
+  }
+  .gallery .main div #img2 {
+    margin-top: 29vh;
+  }
+  .testimonals .tabbs {
+    margin-top: 3vh;
+    text-align: center;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 9vh;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 162px 15px;
+  }
+  .testimonals .tabbs p {
+    font-size: 25px;
+    margin-top: 2vh;
+  }
+  .testimonals .tabbs p .acoustic {
+    background: url("../img/Group 1396.png") no-repeat;
+    background-size: cover;
+  }
+  .testimonals .tabbs p .acoustic h2 {
+    margin-left: 15vh;
+  }
+  .testimonals .tabbs p .acoustic #bg {
+    position: absolute;
+    width: 100%;
+    margin-top: -14vh;
+    margin-left: 34vh;
+  }
+  .testimonals .tabbs p .acoustic .fouthslick .div1 img {
+    width: 89%;
+    margin-left: 4vh;
+  }
+  .testimonals .tabbs p .acoustic .fouthslick .div1 #img {
+    width: 93%;
+    margin-left: 0vh;
+  }
+  .testimonals .tabbs p .acoustic .imgs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    top: -22vh;
+  }
+  .testimonals .tabbs p .acoustic .fouthslick .div1 h4 {
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    top: 252px;
+    padding-left: 68px;
+  }
+  .acoustic {
+    margin-left: 4vh;
+    margin-top: 36vh;
+  }
+  .acoustic .img {
+    width: 94%;
+  }
+  .acoustic .fouthslick .div1 h4 {
+    position: absolute;
+    color: white;
+    font-size: 34px;
+    top: 183px;
+    padding-left: 109px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .slick-slide div {
+    margin: 0 20px;
+  }
+  header {
+    background-color: transparent;
+  }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav ul li a {
+    color: black;
+    text-decoration: none;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 3vh;
+    font-size: 36px;
+  }
+  .hero img {
+    position: absolute;
+    margin-left: 77vh;
+    width: 52%;
+  }
+  .hero .slick .img img {
+    left: 91vh;
+    width: 37%;
+  }
+  .hero #img {
+    position: absolute;
+    width: 52%;
+    top: 0vh;
+    left: 0vh;
+  }
+  .hero .slick .text {
+    margin-top: -19vh;
+  }
+  .hero .slick .text h1 {
+    font-size: 48px;
+  }
+  .hero #img50 {
+    width: 33%;
+    margin-left: -11vh;
+    margin-top: -8vh;
+  }
+  .about .div1 {
+    margin-top: 71vh;
+  }
+  .about .div1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about .div1 .h2 h2 {
+    margin-top: -12vh;
+    margin-right: 12vh;
+    font-family: "Montserrat1";
+    font-size: 74px;
+  }
+  .about .div1 .main .div2 {
+    margin-top: -7vh;
+  }
+  .about .div1 .main .div12 {
+    margin-top: -20vh;
+  }
+  .our-menu {
+    padding: 0 12vh;
+  }
+  .our-menu .tab {
+    margin: auto 0px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .our-menu .tabcontent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .our-menu .tabcontent .ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .our-menu .tabcontent .ul ul {
+    width: 50%;
+  }
+  .our-menu .tabcontent .list {
+    display: block;
+  }
+  .our-menu .tabcontent button {
+    display: none;
+  }
+  .gallery {
+    background: url("../img/wheat.png");
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+  }
+  .gallery .div2 {
+    width: auto;
+  }
+  .gallery .main {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .gallery .main div:nth-child(3), .gallery .main div:nth-child(4) {
+    position: relative;
+    bottom: 0;
+  }
+  .gallery .main div img {
+    width: auto;
+  }
+  .gallery .main #img1 {
+    margin-top: 7vh;
+  }
+  .acoustic {
+    background: url("../img/Group 1396.png") no-repeat;
+    background-size: contain;
+    background-position: right;
+    padding: 124px 20px;
+    margin-top: 8vh;
+  }
+  .acoustic h2 {
+    font-size: 43px;
+    left: 21%;
+  }
+  .acoustic #bg {
+    position: absolute;
+    margin-top: -14vh;
+    margin-left: 60vh;
+  }
+  .acoustic .fouthslick .div1 h4 {
+    top: 63%;
+    font-size: 27px;
+    padding-left: 147px;
+  }
+  .special {
+    margin: 0;
+  }
+  .special .div1 {
+    background-color: orangered;
+    margin: 0px 40px;
+  }
+  .special .slick-slide {
+    -webkit-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s;
+    margin: 30px 0px;
+  }
+  .testimonals .tabbs {
+    margin-top: 3vh;
+    text-align: center;
+    width: 69%;
+    margin: 20px auto;
+    border-radius: 10px;
+    margin-top: 9vh;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 69px 140px;
+  }
+  .testimonals .tabbs p {
+    font-size: 18px;
+    margin-top: 2vh;
+  }
+  .our-menu .tab {
+    margin: 20px 0px;
+    margin-right: 20vh;
+  }
+  .gallery .main {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 135px 0px;
+  }
+  footer #img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 11%;
+  }
+  footer .div1 {
+    width: 30%;
+  }
+  footer .div2 {
+    width: 41%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer .div2 .div1 {
+    width: 50%;
+  }
+  footer .div2 .div11 {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
